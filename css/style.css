@@ -255,6 +255,7 @@ a {
     height: 10px;
     border-radius: 50%;
     border: 6px solid #E7C54F;
+    margin-left: 18px;
 }
 
 #dot2 {
@@ -263,11 +264,6 @@ a {
     border-radius: 50%;
 }
 
-#dot3 {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-}
 
 .currentimg {
     border: 4px solid #E7C54F;
