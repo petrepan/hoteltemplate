@@ -1,0 +1,178 @@
+body {
+    color: #333;
+}
+
+nav {
+    background: url('../img/homebackground.png') no-repeat center top/cover;
+    height: 150px;
+    position: relative;
+}
+
+
+.logo img {
+    width: 345px;
+    height: 118px;
+}
+
+hr {
+    width: 60px;
+    margin: auto;
+    margin-bottom: 20px;
+    outline: none;
+    border: 1px solid #E7C54F;
+}
+
+main {
+    padding: 26px 0;
+}
+
+main h1 {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+header {
+    margin: auto;
+    margin-bottom: 24px;
+    width: 90%;
+    border-bottom: 1px solid #E7C54F;
+}
+
+header a {
+    display: inline-block;
+    padding: 15px 34px;
+}
+
+.link1 {
+    border-bottom: 4px solid #E7C54F;
+    color: #E7C54F;
+}
+
+.content {
+    opacity: 0;
+    display: none;
+}
+
+.content.activegallery {
+    display: block;
+    opacity: 1;
+}
+
+.row {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.column {
+    width: 100%;
+}
+
+.column img {
+    width: 100%;
+}
+
+.vidcontent {
+    width: 90%;
+    margin: auto;
+}
+
+video {
+    margin: auto;
+    width: 100%;
+}
+
+footer {
+    background-color: #EBEBEB;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 24px;
+}
+
+.footerdetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+footer h3 {
+    color: #E7C54F;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+footer a {
+    color: #333;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.contact {
+    margin-bottom: 16px;
+}
+
+footer a:hover {
+    opacity: .9;
+}
+
+.footerlogo {
+    width: 100px;
+    height: 100px;
+}
+
+.footerlogo img {
+    width: 100%;
+}
+
+.vector {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+}
+
+.vector img {
+    width: 100%;
+}
+
+.sm {
+    display: inline-block;
+    width: 40px;
+    height: 18px;
+}
+
+.sm img {
+    width: 100%;
+}
+
+.socials {
+    text-align: left;
+    padding: 16px;
+    padding-left: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .row {
+        grid-template-columns: 1fr;
+    }
+
+    .column {
+        flex: 100%;
+        width: 100%;
+    }
+
+    .column img{
+        width: 100%;
+    }
+
+    .footerdetails {
+        grid-template-columns: 1fr;
+    }
+}

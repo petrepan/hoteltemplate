@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu',sans-serif;
+    line-height: 1.1;
+}
+
+nav {
+    background: url('../img/homebackground.png') no-repeat center top/cover;
+    height: 150px;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    z-index: 100;
+}
+img {
+    object-fit: contain;
+}
+
+.logo img{
+    width: 345px;
+    height: 118px;
+}
+
+nav:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(40, 24, 12, 0.35);
+    z-index: -1;
+}
+
+ .currentnav{
+     border-bottom: 1px solid #fff;
+     display: inline-block;
+ }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu,
+.submenu {
+    list-style-type: none;
+}
+
+
+
+.item {
+    padding: 10px;
+}
+
+.item.button {
+    padding: 9px 5px;
+}
+
+.item:not(.button) a:hover,
+.item a:hover::after {
+    color: #ccc;
+}
+
+/* Mobile menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    transition: all .5s;
+    position: relative;
+}
+
+.active{
+    background-color: #E7C54F;
+    
+}
+
+.menu li a {
+    display: inline-block;
+    padding: 15px 5px;
+}
+
+.menu li.subitem a {
+    padding: 15px;
+}
+
+.toggle {
+    order: 1;
+    font-size: 20px;
+    margin-right: 26px;
+}
+
+.item.button {
+    order: 2;
+}
+
+.item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.active .item {
+    display: block;
+}
+
+.button.secondary {
+    /* divider between buttons and menu links */
+    border-bottom: 1px #444 solid;
+}
+
+/* Submenu up from mobile screens */
+.submenu {
+    display: none;
+}
+
+.submenu-active .submenu {
+    display: block;
+}
+
+
+.subitem a {
+    padding: 10px 15px;
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color: #EBEBEB;
+    width: 100%;
+    margin-top: 16px;
+}
+
+footer .container {
+    width: 80%;
+    margin: auto;
+    padding: 24px;
+}
+
+.footerdetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+footer h3 {
+    color: #E7C54F;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+footer a {
+    color: #333;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.contact {
+    margin-bottom: 16px;
+}
+
+footer a:hover {
+    opacity: .9;
+}
+
+.footerlogo {
+    width: 100px;
+    height: 100px;
+}
+
+.footerlogo img {
+    width: 100%;
+}
+
+.vector {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+}
+
+.vector img {
+    width: 100%;
+}
+
+.sm {
+    display: inline-block;
+    width: 40px;
+    height: 18px;
+}
+
+.sm img {
+    width: 100%;
+}
+
+.socials {
+    text-align: left;
+    padding: 16px;
+    padding-left: 0;
+}
+
+@media all and (max-width: 700px){
+.logo img{
+    width: 200px;
+}
+
+footer .container {
+    width: 90%;
+    margin: auto;
+    padding: 24px;
+}
+
+.footerdetails {
+    grid-template-columns: 1fr;
+}
+}
+
+/* Tablet menu */
+@media all and (min-width: 700px) {
+    .menu {
+        justify-content: center;
+        position: relative;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+
+    .toggle {
+        flex: 1;
+        text-align: right;
+        order: 2;
+    }
+
+   
+
+  .has-submenu{
+     position: absolute;
+     background: none;
+     top: 0; 
+  }
+
+     
+}
+
+/* Desktop menu */
+@media all and (min-width: 960px) {
+    .menu {
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 80%;
+        margin: auto;
+        position: relative;
+    }
+
+    .logo {
+        order: 0;
+    }
+
+   
+
+    .item {
+        order: 1;
+        position: relative;
+        display: block;
+        width: auto;
+    }
+
+    .button {
+        order: 2;
+    }
+
+    .submenu-active .submenu {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 68px;
+    }
+
+    .has-submenu{
+        position: absolute;
+        background: none;
+        right: 0;
+        top: 10px;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .submenu-active {
+        border-radius: 0;
+    }
+
+    .slide .content {
+        left: 10%;
+    }
+
+    .gallerybook {
+        left: 10%;
+    }
+
+    .bookhere {
+        margin-right: 104px;
+    }
+}

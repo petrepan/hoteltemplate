@@ -1,0 +1,130 @@
+ #map {
+     height: 400px;
+     /* The height is 400 pixels */
+     width: 700px;
+     margin: auto;
+     /* The width is the width of the web page */
+ }
+
+main {
+    padding: 26px 0;
+    width: 100%;
+}
+
+main h1 {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+ hr {
+     width: 60px;
+     margin: auto;
+     margin-bottom: 20px;
+     outline: none;
+     border: 1px solid #E7C54F;
+ }
+
+ .contactinfo{
+     display: flex;
+     justify-content: space-evenly;
+     width: 80%;
+     margin: auto;
+     padding: 40px;
+ }
+
+ .contactinfo > div > div {
+     margin-bottom: 20px;
+ }
+
+.contactinfo h4{
+    margin: 7px 0 7px 0;
+}
+
+ .contactinfo p{
+     margin-bottom: 5px;
+ }
+
+ .contactinfo a{
+     color: #333;
+ }
+
+ .newsletter{
+     width: 100%;
+     background-color: #E7C54F;
+     padding: 16px;
+ }
+
+ .newslettercontainer{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     width: 80%;
+     margin: auto;
+     padding: 10px;
+ }
+
+ .newslettercontainer + div{
+     padding: 16px;
+ }
+
+ .newslettercontainer h3{
+     font-weight: normal;
+ }
+
+ .newslettercontainer .newsletterbold{
+    font-weight: bold;
+ }
+
+ .newsletterinput{
+     position: relative;
+     width: 400px;
+     border-radius: 10px;
+ }
+
+ .newsletterinput input[type=email]{
+     display: flex;
+     width: 100%;
+     padding: 7px 10px;
+     border-radius: 7px;
+     border: none;
+ }
+
+ .newsletterinput input[type=email]:focus{
+     outline: none;
+     border: 1px solid #333;
+ }
+
+ .newsletterinput input[type=submit]{
+     z-index: 2;
+     position: absolute;
+     top: 0;
+     right: 0;
+     height: 100%;
+     padding: 5px 10px;
+     border: none;
+    border-radius: 0 7px 7px 0;
+    background-color: #333;
+    color: #ffffff;
+    cursor: pointer;
+ }
+
+ @media all and (max-width: 700px){
+    #map{
+        width: 90%;
+       text-align: center;
+    }  
+    
+    .contactinfo{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .newslettercontainer{
+        flex-direction: column;
+    }
+
+    .newslettercontainer .newslettertext{
+        margin-bottom: 16px;
+    }
+ }

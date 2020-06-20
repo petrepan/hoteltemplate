@@ -1,0 +1,168 @@
+ <!doctype html>
+ <html lang="en">
+     <head>
+         <!-- Required meta tags -->
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+             integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+             crossorigin="anonymous">
+         <link rel="stylesheet" href="../css/contact.css">
+         <link rel="stylesheet" href="../css/nav.css">
+      
+         <title>Legacy Hotel| Contact Us</title>
+     </head>
+     <body>
+         <nav>
+             <ul class="menu">
+                 <li class="logo"><a href="index.html"><img src="../img/logo.png" alt="logo"></a></li>
+                 <li class="item"><a href="index.html">Home</a></li>
+                 <li class="item"><a href="rates.html">Rates</a></li>
+                 <li class="item"><a href="facilities.html">Facilities</a></li>
+                 <li class="item"><a class="currentnav" href="contact.html">Contact</a>
+                 </li>
+                 <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+             </ul>
+         </nav>
+
+         <main>
+             <div class="contentcontainer">
+                 <h1>CONTACT US</h1>
+                 <hr>
+                  <div id="map"></div>
+                  <div class="contactinfo">
+                      <div>
+                          <div>
+                              <h4>Address</h4>
+                              <p>LegacyHotels, sonilarr Mh. Girne Cd. 34065, Istanbul, Nigeria.</p>
+                          </div>
+                          <div>
+                              <h4>Phone Number</h4>
+                              <p><a href="tel:+223 678 9839 93">+223 678 9839 93</a></p>
+                              <p><a href="tel:+224 965 3758 03">+224 965 3758 03</a></p>
+                          </div>
+                      </div>
+                      <div>
+                          <div>
+                              <h4>Email</h4>
+                              <p><a href="mailto:info@Legacyhotels.com.ng">info@Legacyhotels.com.ng</a></p>
+                               <p><a href="mailto:reservations@legacyhotels.com">reservation@legacyhotels.com</a></p>
+                          </div>
+                          <div>
+                              <h4>Fax</h4>
+                              <p><a href="tel:+90 212 809 00 99">+90 212 809 00 99</a></p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="newsletter">
+                      <div class="newslettercontainer">
+                          <div class="newslettertext">
+                              <h3>suscribe to <br> <span class="newsletterbold">Our Newsletter</span></h3>
+                          </div>
+                          <div class="newsletterinput">
+                              <input type="email" id="">
+                              <input type="submit" value="Send">
+                          </div>
+                      </div>
+                  </div>
+             </div>
+         </main>
+         <footer>
+             <div class="container">
+                 <div class="footerlogo">
+                     <img src="../img/logo (blavk) 1.png" alt="footer-logo">
+                 </div>
+                 <div class="footerdetails">
+                     <div>
+                         <div>
+                             <h3>Contact Us</h3>
+                         </div>
+                         <div class="contact">
+                             <a class="vector" href="mailto:legacyhotel@gmail.com"><img src="../img/Vector.png"
+                                     alt="mail"> legacyhotel@gmail.com</a>
+                         </div>
+                         <div class="contact">
+                             <a class="vector" href="tel:+234 (0) 8101211029"><img src="../img/Vector1.png"
+                                     alt="number">
+                                 +234(0)8101211029</a>
+                         </div>
+                     </div>
+                     <div>
+                         <div>
+                             <h3>Information</h3>
+                         </div>
+                         <div>
+                             <a href="about.html">About Us</a>
+                         </div>
+                         <div>
+                             <a href="#">More Search</a>
+                         </div>
+                         <div>
+                             <a href="#">Testimonials</a>
+                         </div>
+                         <div>
+                             <a href="#">Events</a>
+                         </div>
+                     </div>
+                     <div>
+                         <div>
+                             <h3>Helpful Links</h3>
+                         </div>
+                         <div>
+                             <a href="#">Services</a>
+                         </div>
+                         <div>
+                             <a href="#">Supports</a>
+                         </div>
+                         <div>
+                             <a href="#">Terms and Conditions</a>
+                         </div>
+                         <div>
+                             <a href="#">Privacy policy</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="socials">
+                     <div>
+                         <a class="sm" href="#"><img src="../img/facebook.png" alt="facebbokicon"></a>
+                         <a class="sm" href="#"><img src="../img/instagram.png" alt="instagramicon"></a>
+                         <a class="sm" href="#"><img src="../img/twitter.png" alt="twittericon"></a>
+                     </div>
+                     <div>
+                         <span>&copy; 2020</span> company Ltd. All Right Reserved
+                     </div>
+                 </div>
+
+             </div>
+         </footer>
+
+<script>
+    // Initialize and add the map
+    function initMap() {
+        // The location of Uluru
+        var uluru = {
+            lat: -25.344,
+            lng: 131.036
+        };
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {
+                zoom: 8,
+                center: uluru
+            });
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+         <!-- Optional JavaScript -->
+<script src="../js/nav.js"></script>
+            
+         <script async defer
+             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrlKnhQEN36ph3tnjK3xaswC6qJtvdwyc&callback=initMap">
+         </script>
+        
+     </body>
+ </html>

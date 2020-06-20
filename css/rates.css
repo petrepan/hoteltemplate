@@ -1,0 +1,120 @@
+main {
+   padding: 26px 0;
+}
+
+main h1 {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+img {
+    object-fit: contain;
+}
+
+hr {
+    width: 60px;
+    margin: auto;
+    margin-bottom: 20px;
+    outline: none;
+    border: 1px solid #E7C54F;
+}
+
+.contentcontainer {
+    width: 80%;
+    margin: auto;
+}
+
+.ratecontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px 20px;
+    width: 100%;
+    color: #ffffff;
+}
+
+.roomdetails {
+    background-color: #E7C54F;
+    margin-top: -32px;
+    padding: 54px 15px 15px 20px;
+    border-radius: 0 0 23px 23px;
+    Width: 100%;
+}
+
+.imgcontainer {
+    width: 100%;
+}
+
+.imgcontainer img {
+    width: 100%;
+}
+
+.roomdetails h4 {
+    font-weight: normal;
+    padding-bottom: 12px;
+    font-size: 22px;
+}
+
+.starsimg {
+    padding-bottom: 20px;
+}
+
+
+.roomdetails p {
+    font-size: 14px;
+    padding: 4px;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.pricebookbtn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricebookbtn span:first-child {
+    font-size: 22px;
+    margin-right: 24px;
+}
+
+.pricebookbtn span:last-child {
+    font-size: 15px;
+    text-align: right;
+    display: inline-block;
+    margin-left: 28px;
+}
+
+.pricebookbtn span:last-child a {
+    font-size: 14px;
+    text-align: right;
+    display: inline-block;
+    background-color: #422C24;
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: #E7C54F;
+}
+
+@media all and (max-width: 1250px) {
+    .ratecontainer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media all and (max-width: 900px) {
+    .ratecontainer {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media all and (max-width: 700px){
+    .contentcontainer{
+        width: 90%;
+    }
+
+    .ratecontainer{
+        gap: 16px;
+    }
+}
